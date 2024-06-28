@@ -81,7 +81,7 @@ function addTodo(data, idTodo){
         <div class="row">
             <div class="col-2 text-center align-content-center">
                 <div class="form-check">
-                    <input class="form-check-input mx-auto" type="checkbox" ${data.get('is_finished') ? 'checked' : ''} onchange="check(this)">
+                    <input class="form-check-input mx-auto is_finished" type="checkbox" ${data.get('is_finished') ? 'checked' : ''} onchange="check(this)">
                 </div>
             </div>
             <div class="col-8 py-3 div-title">
