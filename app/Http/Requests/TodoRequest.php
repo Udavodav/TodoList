@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Requests\Todo;
+namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class StoreRequest extends FormRequest
+class TodoRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -26,7 +26,6 @@ class StoreRequest extends FormRequest
             'title' => 'required|string|max:100',
             'description' => 'nullable|string|max:300',
             'gravity' => 'required|integer|in:1,2,3',
-            'is_finished' => 'nullable|boolean',
         ];
     }
 }

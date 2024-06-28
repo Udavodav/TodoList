@@ -12,6 +12,6 @@ class IndexController extends Controller
     {
         $todos = Auth::user()->todos()->orderBy('gravity', 'ASC')->orderBy('created_at', 'DESC')->get();
 
-        return view('home', compact('todos'));
+        return view('index', compact('todos'));
     }
 }
